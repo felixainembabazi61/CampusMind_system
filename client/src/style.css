@@ -3,3 +3,94 @@
 @media(max-width:1050px){.content{padding:25px 22px}.topbar{padding:0 22px}.story-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:800px){.sidebar{transform:translateX(-100%);transition:.2s;box-shadow:10px 0 30px #2222}.sidebar.open{transform:translateX(0)}.mobile-close{display:block;margin-left:auto;background:none;border:0}.mobile-backdrop{display:block;position:fixed;inset:0;background:#1118;border:0;z-index:4}.main{margin:0}.hamb{display:block;border:0;background:none;color:#666}.topbar{padding:0 14px}.content{padding:22px 15px}.demo-ribbon{left:0}}
 @media(max-width:560px){.topbar{height:58px}.crumb{font-size:9px}.top-actions{gap:7px}.search{padding:6px;border:0}.search input{display:none}.role-pill{font-size:8px}.content{padding:18px 12px}.page-heading h1{font-size:21px}.hero{padding:22px 19px;min-height:230px}.hero h2{font-size:26px}.hero-symbol{right:-10%;font-size:110px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.panel-grid{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr}.toolbar{align-items:flex-start;gap:10px}.panel{padding:15px}.auth-shell{grid-template-columns:1fr}.auth-art{min-height:250px;padding:25px}.auth-copy{margin:45px 0 10px}.auth-copy h1{font-size:29px;margin:9px 0}.auth-copy p{font-size:10px;margin:0}.auth-note{display:none}.auth-foot{display:none}.auth-form-wrap{padding:35px 22px}.auth-form h2{font-size:22px}footer{flex-direction:column;gap:8px}.modal{padding:18px}.demo-ribbon{font-size:6px}}
+
+
+/* =========================================================
+   CAMPUSMIND ACCESSIBILITY OVERRIDES
+   Larger default text, clearer spacing and easier controls.
+   These rules intentionally override the small pixel sizes
+   used in the original dashboard stylesheet.
+========================================================= */
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Keep all ordinary interface text comfortably readable. */
+.university,
+.nav-label,
+.eyebrow,
+.nav-item,
+.sidebar-help b,
+.sidebar-help p,
+.sidebar-user b,
+.sidebar-user small,
+.crumb,
+.role-pill,
+.search input,
+.page-heading p,
+.hero span,
+.hero p,
+.btn,
+.stat span,
+.stat small,
+.panel-title p,
+.link-btn,
+.text-btn,
+.list-row b,
+.list-row small,
+.quick-action,
+th,
+td,
+td small,
+.status,
+.tiny-btn,
+.empty,
+.record b,
+.record p,
+.record small,
+.inline-actions select,
+.setting-row,
+.privacy,
+.toolbar span,
+.story-card > span,
+.story-card p,
+.story-card small,
+.forum-card p,
+.forum-card small,
+.counselor-card p,
+.conversation,
+.message-item small,
+.message-item p,
+.setting-row span,
+.setting-row b,
+footer,
+.auth-copy > span,
+.auth-copy p,
+.auth-note,
+.auth-foot,
+.auth-form > p,
+.auth-form label,
+.modal label,
+.auth-form input,
+.modal input,
+.modal select,
+.modal textarea,
+.center-screen,
+.toast,
+.error,
+.muted,
+.loading {
+  font-size: max(14px, 0.875rem);
+}
+
+/* Primary navigation and frequently used controls. */
+.nav-item,
+.quick-action,
+.conversation {
