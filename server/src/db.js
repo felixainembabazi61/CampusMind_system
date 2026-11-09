@@ -1,6 +1,11 @@
 import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
+
 dotenv.config();
+
+const ssl = process.env.DB_SSL === 'true'
+  ? { rejectUnauthorized: true }
+  : undefined;
 
 export const pool = mysql.createPool({
   host: process.env.DB_HOST || '127.0.0.1',
@@ -8,9 +13,12 @@ export const pool = mysql.createPool({
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME || 'campusmind',
+
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
   timezone: 'Z',
-  dateStrings: true
+  dateStrings: true,
+
+  ...(ssl ? { ssl } : {})
 });
