@@ -106,6 +106,14 @@ const submitAuth = async (e: FormEvent<HTMLFormElement>) => {
 
     // Verify that the authentication cookie works.
     const session = await api('/auth/me');
+    console.log('AUTH SESSION RESPONSE:', session);
+console.log('AUTHENTICATED USER:', session.user);
+
+setUser(session.user);
+setPage('Overview');
+
+console.log('Dashboard transition requested');
+notify('Welcome to CampusMind.');
 
     // Load the authenticated user into the application.
     setUser(session.user);
