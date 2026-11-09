@@ -7,10 +7,15 @@ import { registerSchema, emailSchema, passwordSchema } from '../validation.js';
 
 const router = Router();
 const cookieName = () => process.env.COOKIE_NAME || 'campusmind_session';
+
 const cookieOptions = () => ({
-  httpOnly: true, secure: process.env.NODE_ENV === 'production',
-  sameSite: 'strict', path: '/', maxAge: 8 * 60 * 60 * 1000
+  httpOnly: true,
+  secure: true,
+  sameSite: 'none',
+  path: '/',
+  maxAge: 8 * 60 * 60 * 1000
 });
+
 function issueCookie(res, user) {
   const token = jwt.sign(
     { id: user.id, role: user.role, email: user.email },
