@@ -79,15 +79,46 @@ function App(){
   useEffect(()=>{api('/auth/me').then(x=>setUser(x.user)).catch(()=>setUser(null)).finally(()=>setChecking(false));},[]);
   useEffect(()=>{if(user)load(page);},[user,page]);
   const signOut=async()=>{try{await post('/auth/logout',{});}finally{setUser(null);setData({});setPage('Overview');}};
-  const submitAuth=async(e:FormEvent<HTMLFormElement>)=>{
-    e.preventDefault();setBusy(true);
-    const f=new FormData(e.currentTarget);
-    try{
-      const body=Object.fromEntries(f.entries());
-      const result=await post(loginMode==='login'?'/auth/login':'/auth/register',body);
-      setUser(result.user);setPage('Overview');notify('Welcome to CampusMind.');
-    }catch(err:any){notify(err.message);}finally{setBusy(false);}
-  };
+  
+const submitAuth = async (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const f = new FormData(form);
+  const body = Object.fromEntries(f.entries());
+
+  setBusy(true);
+
+  try {
+    if (loginMode === 'register') {
+      // Create the student account.
+      await post('/auth/register', body);
+
+      // Return the user to the sign-in form.
+      form.reset();
+      setLoginMode('login');
+      notify('Registration successful! Please sign in to continue.');
+      return;
+    }
+
+    // Authenticate the user.
+    await post('/auth/login', body);
+
+    // Verify that the authentication cookie works.
+    const session = await api('/auth/me');
+
+    // Load the authenticated user into the application.
+    setUser(session.user);
+    setPage('Overview');
+
+    notify('Welcome to CampusMind.');
+  } catch (err: any) {
+    notify(err.message || 'Authentication failed. Please try again.');
+  } finally {
+    setBusy(false);
+  }
+};
+
   const submitModal=async(e:FormEvent<HTMLFormElement>)=>{
     e.preventDefault();const f=new FormData(e.currentTarget);const v=Object.fromEntries(f.entries());
     setBusy(true);
