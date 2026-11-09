@@ -84,7 +84,7 @@ function App(){
     const f=new FormData(e.currentTarget);
     try{
       const body=Object.fromEntries(f.entries());
-      const result=await post(loginMode==='"login'?'/auth/login':'/auth/register',body);
+      const result=await post(loginMode==='login'?'/auth/login':'/auth/register',body);
       setUser(result.user);setPage('Overview');notify('Welcome to CampusMind.');
     }catch(err:any){notify(err.message);}finally{setBusy(false);}
   };
