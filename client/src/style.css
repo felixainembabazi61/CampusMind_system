@@ -1,3 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#292e3e;background:#f7f8fc;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select,textarea{font:inherit}button{cursor:pointer}.app-shell{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:250px;background:#fff;border-right:1px solid #eceef4;padding:23px 17px;display:flex;flex-direction:column;z-index:5}.brand{display:flex;align-items:center;gap:10px;margin:0 5px 25px}.brand-mark{background:#6557c8;color:white;width:38px;height:38px;border-radius:12px;display:grid;place-items:center}.brand-mark svg{width:20px}.brand b{font:800 21px Manrope;letter-spacing:-1px}.brand b span{color:#6557c8}.brand small{display:block;color:#9da1ae;font-size:8px;letter-spacing:1.2px}.university{background:#f7f7fb;padding:11px;border-radius:8px;font-size:10px;color:#777d8b;margin-bottom:18px}.nav-label,.eyebrow{font-size:9px;letter-spacing:1px;color:#8b82cf;font-weight:700}.nav-label{color:#a4a8b3;margin:13px 10px 7px}.nav-item{width:100%;border:0;background:none;color:#7b8190;padding:11px;border-radius:8px;display:flex;align-items:center;gap:11px;text-align:left;font-size:11px;margin:2px 0}.nav-item.active,.nav-item:hover{background:#f0effb;color:#6557c8}.sidebar-help{margin-top:auto;background:#f6f5fc;border-radius:10px;padding:14px}.sidebar-help svg{width:18px;color:#6557c8}.sidebar-help b{display:block;font-size:11px;margin:7px 0}.sidebar-help p{font-size:9px;color:#858a98;line-height:1.6}.sidebar-user{border-top:1px solid #eee;padding-top:14px;margin-top:15px;display:flex;align-items:center;gap:9px}.sidebar-user b{font-size:9px;display:block}.sidebar-user small{font-size:8px;color:#999}.avatar{width:32px;height:32px;border-radius:50%;background:#eeeafd;color:#6557c8;display:grid;place-items:center;font-size:10px;font-weight:700;flex-shrink:0}.logout{margin-left:auto;border:0;background:none;color:#888}.main{margin-left:250px}.topbar{height:68px;background:white;border-bottom:1px solid #eceef4;display:flex;align-items:center;justify-content:space-between;padding:0 35px;position:sticky;top:0;z-index:4}.crumb{font-size:10px;color:#9b9fac}.crumb b{color:#4f5564}.top-actions{display:flex;align-items:center;gap:17px}.role-pill{background:#f0effb;color:#6557c8;border-radius:20px;padding:6px 10px;font-size:9px}.search{display:flex;align-items:center;gap:7px;border:1px solid #eceef4;border-radius:7px;padding:8px 10px;color:#888}.search input{border:0;outline:0;width:145px;font-size:10px}.content{max-width:1400px;padding:30px 35px 24px;margin:auto}.page-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.page-heading h1{font:800 25px Manrope;margin:6px 0}.page-heading p{font-size:11px;color:#8d92a0;margin:0}.hero{background:linear-gradient(110deg,#5145a9,#7569c9);border-radius:13px;color:white;padding:29px 33px;min-height:220px;position:relative;overflow:hidden}.hero>div:first-child{position:relative;z-index:1;max-width:440px}.hero span{font-size:8px;letter-spacing:1px;color:#e2defc;font-weight:700}.hero h2{font:800 29px/1.18 Manrope;margin:14px 0 9px}.hero p{font-size:10px;line-height:1.7;color:#e5e2fa;max-width:365px}.hero-symbol{position:absolute;right:12%;top:10%;font-size:145px;color:#c9f0df;opacity:.8}.btn{border:0;border-radius:7px;padding:10px 13px;font-size:9px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:7px}.primary{background:#6557c8;color:#fff}.primary:hover{background:#5143b2}.light{background:#fff;color:#5c4eb9;margin-top:9px}.wide{width:100%;padding:12px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:15px 0}.stat{background:white;border:1px solid #eceef4;border-radius:10px;padding:15px;display:flex;flex-direction:column;gap:5px}.stat span{font-size:9px;color:#8d92a0}.stat b{font:800 23px Manrope}.stat small{font-size:8px;color:#a0a4af}.panel-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:14px}.panel{background:white;border:1px solid #eceef4;border-radius:10px;padding:19px}.panel h3,.panel-title h3{font:700 13px Manrope;margin:0 0 4px}.panel-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.panel-title p{font-size:9px;color:#999eaa;margin:0}.link-btn,.text-btn{border:0;background:none;color:#6557c8;font-size:9px;font-weight:700}.list-row{display:flex;align-items:center;gap:12px;border-top:1px solid #f0f1f5;padding:13px 0}.list-row svg{color:#6557c8;width:18px}.list-row b{font-size:10px;display:block}.list-row small{font-size:8px;color:#969baa;display:block;margin-top:4px}.quick-action{width:100%;display:flex;align-items:center;gap:10px;padding:14px 0;background:white;border:0;border-top:1px solid #eff0f5;text-align:left;color:#6557c8;font-size:10px}.quick-action span{margin-left:auto;color:#a2a6b0}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;text-align:left}th{font-size:8px;color:#9da1ad;letter-spacing:.7px;padding:12px;border-bottom:1px solid #eee}td{font-size:10px;padding:14px 12px;border-bottom:1px solid #f0f1f5;color:#5b6070}td small{display:block;color:#999;margin-top:4px}.status{background:#f0effb;color:#6e63c2;padding:5px 8px;border-radius:20px;font-size:8px;white-space:nowrap}.tiny-btn{border:0;background:#f0effb;color:#6557c8;padding:7px;border-radius:5px;font-size:8px;margin:2px}.tiny-btn.danger{background:#fff0ef;color:#c96e68}.empty{color:#9a9eaa;font-size:10px;padding:20px 0;text-align:center}.record{padding:15px 0;border-top:1px solid #eff0f5}.record-top{display:flex;justify-content:space-between;align-items:center}.record b{font-size:11px}.record p{font-size:10px;line-height:1.6;color:#747a89}.record small{font-size:8px;color:#9297a4}.inline-actions{display:flex;gap:8px;margin-top:10px}.inline-actions select,.setting-row{font-size:9px;padding:7px;border:1px solid #eceef4;border-radius:6px}.privacy{background:#f7f6fd;color:#766db5;border-radius:7px;padding:12px;font-size:9px;line-height:1.6;margin-top:13px}.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.toolbar span{font-size:8px;color:#8e83ca;letter-spacing:.5px}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.story-card{background:white;border:1px solid #eceef4;border-radius:10px;padding:18px;min-height:185px;display:flex;flex-direction:column}.story-card>span{color:#8278c8;font-size:8px}.story-card h3{font:700 13px Manrope;margin:12px 0 6px}.story-card p,.forum-card p{font-size:10px;line-height:1.7;color:#858a98;flex:1}.story-card small,.forum-card small{font-size:8px;color:#999}.forum-card{margin-bottom:12px}.forum-card h3{margin:9px 0}.counselor-card .large{width:50px;height:50px;font-size:14px}.counselor-card h3{margin:12px 0 4px}.counselor-card p{font-size:9px;color:#8c91a0}.conversation{width:100%;padding:13px;border:0;border-top:1px solid #eee;background:white;display:flex;align-items:center;gap:10px;text-align:left;font-size:10px;color:#555}.conversation svg{color:#6557c8}.conversation span{margin-left:auto;color:#6557c8}.conversation-panel{border:1px solid #eee;border-radius:8px;padding:13px;margin-top:15px}.message-list{max-height:250px;overflow:auto}.message-item{background:#f6f5fc;border-radius:7px;padding:10px;margin:8px 0}.message-item small{font-size:8px;color:#8c83c7}.message-item p{font-size:10px;margin:5px 0}.message-send{display:flex;gap:8px;margin-top:10px}.message-send input{flex:1;min-width:0;border:1px solid #eceef4;border-radius:7px;padding:10px;font-size:10px}.setting-row{display:flex;justify-content:space-between;margin:8px 0;padding:13px}.setting-row span{color:#888}.setting-row b{font-size:9px}footer{display:flex;justify-content:space-between;color:#a1a5b0;font-size:8px;padding:20px 2px 12px}.demo-ribbon{position:fixed;bottom:0;left:250px;right:0;text-align:center;background:#f0effb;color:#756bbd;padding:5px;font-size:7px;letter-spacing:1px}.auth-shell{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;background:white}.auth-art{background:linear-gradient(145deg,#5145a9,#786bcb);padding:38px 8%;color:white;display:flex;flex-direction:column;position:relative;overflow:hidden}.auth-art .brand{margin:0}.auth-art .brand b,.auth-art .brand small{color:white}.auth-art .brand b span{color:#d4ceff}.auth-copy{margin:auto 0;position:relative;z-index:1}.auth-copy>span{font-size:9px;letter-spacing:1px;color:#e4defc}.auth-copy h1{font:800 clamp(30px,4vw,48px)/1.15 Manrope;margin:18px 0}.auth-copy p{font-size:12px;line-height:1.8;color:#e5e2fa;max-width:390px}.auth-note{display:flex;align-items:center;gap:10px;margin-top:30px;font-size:11px}.auth-note svg{width:20px}.auth-foot{font-size:8px;color:#ddd8f5}.auth-form-wrap{display:grid;place-items:center;padding:30px}.auth-form{width:min(380px,100%)}.auth-form h2{font:800 25px Manrope;margin:10px 0 6px}.auth-form>p{font-size:10px;color:#9095a2;line-height:1.6;margin-bottom:22px}.auth-form label,.modal label{font-size:9px;font-weight:700;color:#555;display:flex;flex-direction:column;gap:6px;margin:13px 0}.auth-form input,.modal input,.modal select,.modal textarea{padding:11px;border:1px solid #e8eaf0;border-radius:7px;font-size:10px;outline:0}.auth-form input:focus,.modal input:focus,.modal textarea:focus{border-color:#8b82cf}.auth-form .text-btn{display:block;margin:15px auto}.center-screen{height:100vh;display:grid;place-content:center;justify-items:center;color:#888;font-size:11px}.modal-backdrop{position:fixed;inset:0;background:#20243a88;z-index:20;display:grid;place-items:center;padding:16px}.modal{background:white;border-radius:13px;padding:23px;width:min(470px,100%);max-height:90vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;margin-bottom:17px}.modal-head h2{font:800 19px Manrope;margin:7px 0}.icon-btn{border:0;background:none;color:#777}.modal form{display:flex;flex-direction:column;gap:4px}.modal textarea{min-height:90px;resize:vertical}.toast{position:fixed;bottom:28px;right:22px;background:#29334a;color:white;padding:13px 16px;border-radius:8px;z-index:30;font-size:10px;display:flex;gap:8px;align-items:center;max-width:min(450px,90vw)}.toast button{background:none;border:0;color:white;margin-left:10px}.error{color:#bd5555;font-size:9px}.muted{font-size:10px;color:#888}.loading{font-size:9px;color:#999}.hamb,.mobile-close,.mobile-backdrop{display:none}
+@media(max-width:1050px){.content{padding:25px 22px}.topbar{padding:0 22px}.story-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.sidebar{transform:translateX(-100%);transition:.2s;box-shadow:10px 0 30px #2222}.sidebar.open{transform:translateX(0)}.mobile-close{display:block;margin-left:auto;background:none;border:0}.mobile-backdrop{display:block;position:fixed;inset:0;background:#1118;border:0;z-index:4}.main{margin:0}.hamb{display:block;border:0;background:none;color:#666}.topbar{padding:0 14px}.content{padding:22px 15px}.demo-ribbon{left:0}}
+@media(max-width:560px){.topbar{height:58px}.crumb{font-size:9px}.top-actions{gap:7px}.search{padding:6px;border:0}.search input{display:none}.role-pill{font-size:8px}.content{padding:18px 12px}.page-heading h1{font-size:21px}.hero{padding:22px 19px;min-height:230px}.hero h2{font-size:26px}.hero-symbol{right:-10%;font-size:110px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.panel-grid{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr}.toolbar{align-items:flex-start;gap:10px}.panel{padding:15px}.auth-shell{grid-template-columns:1fr}.auth-art{min-height:250px;padding:25px}.auth-copy{margin:45px 0 10px}.auth-copy h1{font-size:29px;margin:9px 0}.auth-copy p{font-size:10px;margin:0}.auth-note{display:none}.auth-foot{display:none}.auth-form-wrap{padding:35px 22px}.auth-form h2{font-size:22px}footer{flex-direction:column;gap:8px}.modal{padding:18px}.demo-ribbon{font-size:6px}}
+
+
+/* =========================================================
+   CAMPUSMIND ACCESSIBILITY OVERRIDES
+   Larger default text, clearer spacing and easier controls.
+   These rules intentionally override the small pixel sizes
+   used in the original dashboard stylesheet.
+========================================================= */
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Keep all ordinary interface text comfortably readable. */
+.university,
+.nav-label,
+.eyebrow,
+.nav-item,
+.sidebar-help b,
+.sidebar-help p,
+.sidebar-user b,
+.sidebar-user small,
+.crumb,
+.role-pill,
+.search input,
+.page-heading p,
+.hero span,
+.hero p,
+.btn,
+.stat span,
+.stat small,
+.panel-title p,
+.link-btn,
+.text-btn,
+.list-row b,
+.list-row small,
+.quick-action,
+th,
+td,
+td small,
+.status,
+.tiny-btn,
+.empty,
+.record b,
+.record p,
+.record small,
+.inline-actions select,
+.setting-row,
+.privacy,
+.toolbar span,
+.story-card > span,
+.story-card p,
+.story-card small,
+.forum-card p,
+.forum-card small,
+.counselor-card p,
+.conversation,
+.message-item small,
+.message-item p,
+.setting-row span,
+.setting-row b,
+footer,
+.auth-copy > span,
+.auth-copy p,
+.auth-note,
+.auth-foot,
+.auth-form > p,
+.auth-form label,
+.modal label,
+.auth-form input,
+.modal input,
+.modal select,
+.modal textarea,
+.center-screen,
+.toast,
+.error,
+.muted,
+.loading {
+  font-size: max(14px, 0.875rem);
+}
+
+/* Primary navigation and frequently used controls. */
+.nav-item,
+.quick-action,
+.conversation {
+  min-height: 44px;
+  line-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: max(16px, 1rem);
+}
+
+input,
+select,
+textarea {
+  min-height: 44px;
+  line-height: 1.5;
+}
+
+.auth-form input,
+.modal input,
+.modal select,
+.modal textarea,
+.message-send input,
+.search input {
+  font-size: 16px;
+}
+
+/* Increase headings and important dashboard information. */
+.brand b {
+  font-size: 23px;
+}
+
+.page-heading h1 {
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.hero h2 {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.stat b {
+  font-size: 26px;
+}
+
+.panel h3,
+.panel-title h3,
+.story-card h3,
+.forum-card h3,
+.counselor-card h3 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.record b {
+  font-size: 16px;
+}
+
+.auth-copy h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.25;
+}
+
+.auth-form h2 {
+  font-size: 28px;
+}
+
+.modal-head h2 {
+  font-size: 22px;
+}
+
+/* Improve paragraph and reading spacing. */
+p,
+li,
+td,
+.record p,
+.story-card p,
+.forum-card p,
+.hero p,
+.auth-copy p {
+  line-height: 1.7;
+}
+
+/* Make status labels and small action buttons easier to read. */
+.status,
+.tiny-btn,
+.role-pill {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 7px 10px;
+}
+
+/* Preserve usable layout on smaller screens. */
+@media (max-width: 560px) {
+  html,
+  body {
+    font-size: 17px;
+  }
+
+  .page-heading h1 {
+    font-size: 25px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .auth-copy h1 {
+    font-size: 30px;
+  }
+
+  .auth-form h2 {
+    font-size: 25px;
+  }
+
+  .content {
+    padding: 20px 14px;
+  }
+}
+
+/* Respect users who request reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* =========================================================
+   CAMPUSMIND VISUAL HIERARCHY & UNIVERSAL DESIGN
+   Purposeful colour, clear status signals, and calm emphasis.
+   Colour is always paired with text/labels (not colour alone).
+========================================================= */
+
+:root {
+  --cm-purple: #6557c8;
+  --cm-purple-dark: #493d9d;
+  --cm-purple-soft: #f0effb;
+
+  --cm-blue: #2463a6;
+  --cm-blue-soft: #edf5ff;
+
+  --cm-teal: #147d78;
+  --cm-teal-soft: #eaf7f5;
+
+  --cm-green: #267348;
+  --cm-green-soft: #eaf6ee;
+
+  --cm-amber: #94600b;
+  --cm-amber-soft: #fff5df;
+
+  --cm-red: #a83232;
+  --cm-red-soft: #fff0ef;
+
+  --cm-ink: #292e3e;
+  --cm-muted: #555d6d;
+  --cm-border: #e1e4ed;
+}
+
+/* A clearer visual rhythm between dashboard sections. */
+.panel,
+.stat,
+.story-card,
+.modal,
+.conversation-panel {
+  box-shadow: 0 2px 10px rgba(41, 46, 62, 0.045);
+}
+
+.panel {
+  border-top: 3px solid #d9d5f5;
+}
+
+.panel-title {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eceef5;
+}
+
+.stat {
+  border-left: 4px solid #a49bdd;
+  background: linear-gradient(135deg, #fff 0%, #fbfaff 100%);
+}
+
+.stat:nth-child(2) {
+  border-left-color: #76a9d8;
+  background: linear-gradient(135deg, #fff 0%, #f7fbff 100%);
+}
+
+.stat:nth-child(3) {
+  border-left-color: #65aaa0;
+  background: linear-gradient(135deg, #fff 0%, #f6fcfa 100%);
+}
+
+.stat:nth-child(4) {
+  border-left-color: #d6a64e;
+  background: linear-gradient(135deg, #fff 0%, #fffaf0 100%);
+}
+
+/* Friendly, welcoming emphasis for the main dashboard banner. */
+.hero {
+  background: linear-gradient(115deg, #493d9d 0%, #6557c8 58%, #8278d5 100%);
+}
+
+.hero-symbol {
+  pointer-events: none;
+}
+
+/* Navigation: a visible active state, not just a subtle colour shift. */
+.nav-item.active {
+  background: #eeecfb;
+  color: #493d9d;
+  box-shadow: inset 3px 0 0 #6557c8;
+  font-weight: 700;
+}
+
+.nav-item:focus-visible,
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #2463a6;
+  outline-offset: 2px;
+}
+
+/* Section accents for optional semantic grouping in the UI. */
+.section-welcome {
+  background: #f1efff;
+  border-left: 4px solid var(--cm-purple);
+  border-radius: 9px;
+  padding: 16px;
+}
+
+.section-support {
+  background: var(--cm-teal-soft);
+  border-left: 4px solid var(--cm-teal);
+  border-radius: 9px;
+  padding: 16px;
+}
+
+.section-community {
+  background: var(--cm-blue-soft);
+  border-left: 4px solid var(--cm-blue);
+  border-radius: 9px;
+  padding: 16px;
+}
+
+.section-important {
+  background: var(--cm-amber-soft);
+  border-left: 4px solid #c18a25;
+  border-radius: 9px;
+  padding: 16px;
+}
+
+/* Reusable alert styles: use with clear text such as "Warning". */
+.alert,
+.alert-info,
+.alert-success,
+.alert-warning,
+.alert-danger {
+  border-radius: 9px;
+  border: 1px solid transparent;
+  padding: 13px 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.alert-info {
+  color: #174d80;
+  background: var(--cm-blue-soft);
+  border-color: #c9def5;
+  border-left: 5px solid var(--cm-blue);
+}
+
+.alert-success {
+  color: #205d3b;
+  background: var(--cm-green-soft);
+  border-color: #c8e5d1;
+  border-left: 5px solid var(--cm-green);
+}
+
+.alert-warning {
+  color: #704807;
+  background: var(--cm-amber-soft);
+  border-color: #f0dcae;
+  border-left: 5px solid #b77a12;
+}
+
+.alert-danger {
+  color: #842626;
+  background: var(--cm-red-soft);
+  border-color: #efc9c6;
+  border-left: 5px solid var(--cm-red);
+  font-weight: 600;
+}
+
+/* Existing status badges can express meaning through modifier classes. */
+.status.success,
+.status.completed,
+.status.approved {
+  color: #205d3b;
+  background: var(--cm-green-soft);
+  border: 1px solid #c8e5d1;
+}
+
+.status.warning,
+.status.pending,
+.status.review {
+  color: #704807;
+  background: var(--cm-amber-soft);
+  border: 1px solid #f0dcae;
+}
+
+.status.danger,
+.status.rejected,
+.status.urgent,
+.status.cancelled {
+  color: #842626;
+  background: var(--cm-red-soft);
+  border: 1px solid #efc9c6;
+}
+
+.status.info,
+.status.scheduled,
+.status.active {
+  color: #174d80;
+  background: var(--cm-blue-soft);
+  border: 1px solid #c9def5;
+}
+
+/* Form validation and urgent messages should be noticeable but calm. */
+.error {
+  color: var(--cm-red);
+  background: var(--cm-red-soft);
+  border-left: 3px solid var(--cm-red);
+  border-radius: 5px;
+  padding: 7px 10px;
+}
+
+.privacy {
+  color: #493d82;
+  background: #f2f0ff;
+  border-left: 4px solid var(--cm-purple);
+}
+
+.sidebar-help {
+  background: #f1efff;
+  border: 1px solid #e2defa;
+}
+
+.sidebar-help b {
+  color: #493d9d;
+}
+
+/* Community and story cards gain gentle separation. */
+.story-card:nth-child(3n + 1) {
+  border-top: 3px solid #8a80d2;
+}
+
+.story-card:nth-child(3n + 2) {
+  border-top: 3px solid #70aaa2;
+}
+
+.story-card:nth-child(3n) {
+  border-top: 3px solid #7ca8d3;
+}
+
+.message-item {
+  background: #f0effb;
+  border-left: 3px solid #8a80d2;
+}
+
+.message-item:nth-child(even) {
+  background: #edf5ff;
+  border-left-color: #75a5d2;
+}
+
+/* Clearer primary and destructive action distinction. */
+.btn.primary {
+  background: var(--cm-purple);
+}
+
+.btn.primary:hover {
+  background: var(--cm-purple-dark);
+}
+
+.tiny-btn.danger {
+  color: #842626;
+  background: var(--cm-red-soft);
+  border: 1px solid #efc9c6;
+}
+
+.tiny-btn.danger:hover {
+  background: #ffe2df;
+}
+
+/* Keep muted text readable; avoid very pale text on white. */
+.crumb,
+.page-heading p,
+.panel-title p,
+.list-row small,
+.record small,
+.muted,
+.empty,
+footer {
+  color: #626979;
+}
+
+/* Don't communicate danger, success, or priority by colour alone.
+   Keep visible text labels/icons such as "Urgent", "Approved",
+   "Warning", or "Completed" in the component content. */
+
+@media (prefers-contrast: more) {
+  .panel,
+  .stat,
+  .story-card,
+  .alert-info,
+  .alert-success,
+  .alert-warning,
+  .alert-danger {
+    border-width: 2px;
+  }
+
+  .nav-item.active {
+    outline: 2px solid var(--cm-purple-dark);
+  }
+}
+
+
+
+
+
+
 /*
  * CampusMind — Accessible colour and UI enhancement layer
  * Add this file's contents to the END of client/src/style.css.
